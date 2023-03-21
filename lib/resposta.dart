@@ -8,20 +8,26 @@ class Resposta extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return SizedBox(
-      width: double.infinity,
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: const Color.fromARGB(255, 54, 111, 244),
-          disabledForegroundColor:
-              const Color.fromARGB(255, 122, 122, 122).withOpacity(0.38),
-          disabledBackgroundColor:
-              const Color.fromARGB(255, 122, 122, 122).withOpacity(0.12),
-          elevation: 20,
-          shadowColor: Colors.blue,
+      width: screenWidth * 0.9,
+      child: Container(
+        margin: const EdgeInsets.only(bottom: 15),
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 54, 111, 244),
+            disabledForegroundColor:
+                const Color.fromARGB(255, 122, 122, 122).withOpacity(0.38),
+            disabledBackgroundColor:
+                const Color.fromARGB(255, 122, 122, 122).withOpacity(0.12),
+            elevation: 20,
+            shadowColor: Colors.blue,
+            textStyle: const TextStyle(fontSize: 25),
+            padding: const EdgeInsets.all(15),
+          ),
+          onPressed: quandoSelecionado,
+          child: Text(texto),
         ),
-        onPressed: quandoSelecionado,
-        child: Text(texto),
       ),
     );
   }
