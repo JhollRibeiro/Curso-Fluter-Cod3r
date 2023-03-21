@@ -31,9 +31,9 @@ class _PerguntaAppState extends State<PerguntaApp> {
     {
       'texto': 'Qual é o seu instrutor favorito?',
       'respostas': [
-        {'texto': 'Leo', 'pontuacao': 10},
+        {'texto': 'João', 'pontuacao': 10},
         {'texto': 'Maria', 'pontuacao': 5},
-        {'texto': 'João', 'pontuacao': 3},
+        {'texto': 'Leo', 'pontuacao': 3},
         {'texto': 'Pedro', 'pontuacao': 1},
       ]
     },
